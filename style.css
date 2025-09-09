@@ -1,0 +1,1191 @@
+/********************************** Reset css Start  **********************************/
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Livvic", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/********************************** Reset css End  **********************************/
+/********************************** header css start  **********************************/
+header .container,
+footer .container {
+    max-width: 1500px;
+}
+
+header {
+    padding: 50px 0px;
+    border-top: 2px solid #074DF6;
+}
+
+header .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header .header-left {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+header .blue-block {
+    width: 16px;
+    height: 16px;
+    background: #074DF6;
+}
+
+header .portfolio-owner-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+header .portfolio-name a {
+    font-size: 25px;
+    color: #000;
+    font-weight: 700;
+    line-height: 1;
+}
+
+header .porfolio-designation a {
+    font-size: 15px;
+    line-height: 1;
+    color: #000;
+    font-weight: 300;
+}
+
+header .header-link-wrapper ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+header .header-link-wrapper ul li a {
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+header .header-link-wrapper ul li.current-menu-item a {
+    color: #074DF6;
+}
+
+header .header-toggle-wrapper {
+    display: none;
+}
+
+header .header-toggle-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 21px;
+    justify-content: space-between;
+    transition: transform .33s ease-out;
+    width: 26px;
+
+}
+
+header .header-toggle-icon .header-top-icon {
+    transform-origin: right;
+    transition: transform .33s cubic-bezier(.54, -.81, .57, .57);
+    width: 50%;
+    background-color: #074DF6;
+    border-radius: 1.5px;
+    height: 3px;
+}
+
+header .header-toggle-icon .header-middle-icon {
+    width: 100%;
+    background-color: #074DF6;
+    border-radius: 1.5px;
+    height: 3px;
+}
+
+header .header-toggle-icon .header-bottom-icon {
+    align-self: flex-end;
+    transform-origin: left;
+    transition: transform .33s cubic-bezier(.54, -.81, .57, .57);
+    width: 50%;
+    background-color: #074DF6;
+    border-radius: 1.5px;
+    height: 3px;
+}
+
+header .active .header-toggle-icon {
+    transform: rotate(-45deg);
+}
+
+header .active .header-toggle-icon .header-top-icon {
+    background-color: #000;
+    transform: rotate(-90deg) translateX(4px);
+}
+
+header .active .header-toggle-icon .header-middle-icon {
+    background-color: #000;
+}
+
+header .active .header-toggle-icon .header-bottom-icon {
+    transform: rotate(-90deg) translateX(-4px);
+    background-color: #000;
+
+}
+
+/********************************** header css End  **********************************/
+
+/********************************** footer css start  **********************************/
+footer {
+    padding: 40px 0px;
+}
+
+footer .footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .footer-right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+}
+
+footer .social-icon ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+footer .social-icon ul a {
+    display: flex;
+}
+
+footer .social-icon ul li svg {
+    width: 19px;
+}
+
+footer .footer-left p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    line-height: 1;
+}
+
+footer .footer-right h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    line-height: 1;
+}
+
+footer .footer-right p a {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-right p a svg {
+    width: 19px;
+}
+
+footer .footer-right p {
+    margin-top: 10px;
+}
+
+/********************************** footer css End  **********************************/
+/********************************** About css start  **********************************/
+.about {
+    position: relative;
+    padding: 90px 0px;
+}
+
+.about::before {
+    content: '';
+    background-color: #E6DACF;
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.about .about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about .about-bio {
+    padding: 20px 40px;
+}
+
+.about .about-left {
+    background-color: #F5ECE6;
+    width: 40%;
+    text-align: center;
+    box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23), 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about .about-img {
+    margin: 0px 0px 25px 0;
+}
+
+.about .about-img img {
+    width: 205px;
+    height: 205px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.about .about-name {
+    margin: 0px 0px 25px 0;
+}
+
+.about .about-name h2 {
+    font-size: 27px;
+    font-weight: 600;
+    color: #000;
+    line-height: 1;
+
+
+}
+
+.about .blue-border-line {
+    border-top: 2px solid #074DF6;
+    width: 50px;
+    margin: 0 auto;
+}
+
+.about .about-designation {
+    margin: 25px 0px;
+}
+
+.about .about-designation p {
+    font-size: 17px;
+    font-weight: 300;
+    color: #000;
+    line-height: 1;
+    letter-spacing: 3px;
+}
+
+.about .about-social-links {
+    padding: 20px 40px;
+    background-color: #fff;
+}
+
+.about .about-social-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.about .about-social-links ul a {
+    display: flex;
+}
+
+.about .about-social-links ul li svg {
+    width: 25px;
+}
+
+.about .about-right {
+    width: 60%;
+    padding: 40px;
+}
+
+.about .about-heading {
+    margin: 0px 0px 25px 0px;
+}
+
+.about .about-heading h1 {
+    font-size: 100px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1;
+
+}
+
+.about .about-subheading {
+    margin: 0px 0px 25px 0px;
+}
+
+.about .about-subheading h4 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+    line-height: 1;
+}
+
+.about .about-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0px 0px 25px 0px;
+}
+
+.about .btn {
+    padding: 8px 30px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 20px;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.about .resume-btn {
+    border: 2px solid #074DF6;
+    background-color: #074DF6;
+    color: #fff;
+}
+
+.about .resume-btn:hover {
+    border: 2px solid #074DF6;
+    background-color: #fff;
+    color: #000;
+}
+
+.about .project-btn {
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+}
+
+.about .project-btn:hover {
+    background-color: #074DF6;
+    border: 1px solid #074DF6;
+    color: #fff;
+}
+
+.about-short-desc p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #000;
+    line-height: 1.5;
+}
+
+/********************************** About css End  **********************************/
+/********************************** Resume css start  **********************************/
+.resume .container {
+    max-width: 720px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+.resume {
+    padding: 90px 0px;
+    background-color: #E6DACF;
+}
+
+.resume .blue-block {
+    width: 20px;
+    height: 20px;
+    background: #074DF6;
+}
+
+.resume .resume-heading {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.resume .resume-tittle h1 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1;
+}
+
+.resume .btn {
+    padding: 8px 30px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 20px;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.resume .cv-btn {
+    border: 2px solid #074DF6;
+    background-color: #074DF6;
+    color: #fff;
+}
+
+.resume .cv-btn:hover {
+    border: 2px solid #074DF6;
+    background-color: transparent;
+    color: #000;
+}
+
+.resume .experience-wapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px 0px;
+}
+
+.resume .experience-heading h2 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1;
+    color: #000;
+}
+
+.resume .resume-details-wapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.resume .resume-details {
+    background-color: #fff;
+    padding: 50px 20px;
+}
+
+.resume .resume-details-left {
+    width: 40%;
+}
+
+.resume .resume-details-right {
+    width: 50%;
+}
+
+.resume .year,
+.resume .position,
+.resume .company-name,
+.resume .company-location {
+    margin-bottom: 25px;
+}
+
+.resume .year h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #074DF6;
+    line-height: 1;
+}
+
+.resume .position p {
+    font-size: 17px;
+    font-weight: 300;
+    color: #000;
+    line-height: 1.2;
+}
+
+.resume .company-name p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    line-height: 1;
+}
+
+.resume .company-location p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    line-height: 1;
+}
+
+.resume .resume-desc p {
+    font-size: 17px;
+    font-weight: 300;
+    color: #000;
+    line-height: 1.5;
+}
+
+.resume .education {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    margin: 70px 0px;
+}
+
+.resume .education-heading h2 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1;
+    color: #000;
+}
+
+.resume .space-between {
+    margin: 30px 0px;
+}
+
+.resume .Skills-listings ul li .blue-block {
+    width: 13px;
+    height: 13px;
+}
+
+.resume .Skills-listings ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.resume .Skills-listings ul li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    width: calc(50% - 10px);
+}
+
+.resume .skills-heading {
+    padding: 30px 0px;
+}
+
+.resume .skills-heading h3 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1;
+    color: #000;
+}
+
+.resume .skills-details {
+    background-color: #fff;
+    padding: 0px 20px 50px 20px;
+}
+
+.resume .Skills-listings ul li h4 {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    line-height: 1;
+}
+
+/********************************** Resume css End  **********************************/
+/********************************** Project css End  **********************************/
+.project {
+    padding: 90px 0px;
+    background-color: #E6DACF;
+}
+
+.project .project-heading {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.project .blue-block {
+    width: 20px;
+    height: 20px;
+    background: #074DF6;
+}
+
+.project .project-tittle h1 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1;
+}
+
+.project .project-card {
+    margin: 70px 0px;
+}
+
+.project .inner-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.project .card-img img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.project .card-col:hover {
+    transform: scale(1.05);
+}
+
+.project .card-col {
+    width: calc(50% - 20px);
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23), 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.project .card-meta {
+    padding: 20px;
+}
+
+.project .card-heading,
+.project .card-subheading,
+.project .card-desc {
+    margin-bottom: 10px;
+}
+
+.project .card-heading a h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #074DF6;
+    line-height: 1;
+}
+
+.project .card-heading a h3:hover {
+    text-decoration: underline;
+}
+
+.project .card-subheading h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    line-height: 1;
+}
+
+.project .card-desc p {
+    font-size: 17px;
+    font-weight: 300;
+    color: #000;
+    line-height: 1.5;
+}
+
+/********************************** Project css End  **********************************/
+/********************************** Contact css Start  **********************************/
+.contact .container {
+    max-width: 650px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+.contact {
+    padding: 90px 0px;
+    background-color: #E6DACF;
+}
+
+.contact .contact-heading {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact .blue-block {
+    width: 20px;
+    height: 20px;
+    background: #074DF6;
+}
+
+.contact .contact-tittle h1 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1;
+}
+
+.contact .contact-form {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px 0px;
+    box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23), 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contact .first-two-coloums {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact .input-fields {
+    border-bottom: 2px solid #000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.contact .form-inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact .form-groups label {
+    display: inline-block;
+    width: 100%;
+    padding: 30px 0px 15px 0px;
+}
+
+.contact .form-groups input {
+    display: inline-block;
+    width: 100%;
+    padding: 8px 2px 8px 12px;
+    color: #074DF6;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    font-family: "Livvic", sans-serif;
+}
+
+.contact .form-groups textarea {
+    display: inline-block;
+    width: 100%;
+    padding: 0px 12px;
+    color: #074DF6;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: "Livvic", sans-serif;
+}
+
+.contact .form-groups input:focus-visible,
+.contact .form-groups textarea:focus-visible {
+    outline: none;
+    border-color: #074DF6;
+}
+
+.contact .form-groups input:focus,
+.contact .form-groups textarea:focus {
+    caret-color: #074DF6;
+
+}
+
+.contact .submit-form {
+    margin-top: 30px;
+}
+
+.contact .form-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    line-height: 1;
+}
+
+.contact .submit-btn {
+    padding: 11px 36px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 20px;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #074DF6;
+    background-color: #074DF6;
+    color: #fff;
+}
+
+.contact .submit-btn:hover {
+    border: 2px solid #074DF6;
+    background-color: #fff;
+    color: #000;
+}
+
+
+.contact .error-icon {
+    color: #e53935;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.contact .error-message {
+    color: #e53935;
+    font-size: 0.9rem;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.contact .success-msg {
+    color: #2e7d32;
+    background: #e8f5e9;
+    padding: 10px 15px;
+    border: 1px solid #a5d6a7;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/********************************** Contact css End  **********************************/
+/********************************** Responsive css Start  **********************************/
+@media screen and (max-width: 991px) {
+    .about::before {
+        width: 35%;
+    }
+
+    .about .about-left {
+        width: 45%;
+    }
+
+    .about .about-right {
+        width: 55%;
+        padding: 25px;
+    }
+
+    .about .about-heading {
+        margin: 0px 0px 15px 0px;
+    }
+
+    .about .about-heading h1 {
+        font-size: 70px;
+    }
+
+    .about .about-subheading {
+        margin: 0px 0px 15px 0px;
+    }
+
+    .about .about-subheading h4 {
+        font-size: 22px;
+    }
+
+    .about .about-buttons {
+        margin: 0px 0px 15px 0px;
+    }
+
+    .about-short-desc p {
+        font-size: 16px;
+    }
+
+    .about,
+    .resume,
+    .project,
+    .contact {
+        padding: 70px 0px;
+    }
+
+    .resume .experience-wapper,
+    .resume .education {
+
+        margin: 40px 0px;
+    }
+
+    .resume .resume-details {
+
+        padding: 30px 20px;
+    }
+
+    .resume .space-between {
+        margin: 20px 0px;
+    }
+
+    .resume .skills-details {
+        padding: 0px 20px 30px 20px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .about::before {
+        width: 100%;
+        height: 70%;
+        top: auto;
+        bottom: 0;
+    }
+
+    .about .about-left {
+        width: 100%;
+    }
+
+    .about .about-right {
+        width: 100%;
+        padding: 30px 0px 0px 0px;
+    }
+
+    header .header-link-wrapper {
+        position: fixed;
+        top: -100%;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: #F5ECE6;
+        z-index: 1;
+        overflow-y: auto;
+        opacity: 0;
+        transition: all 0.8s ease-in-out;
+    }
+
+    header .header-link-wrapper.active {
+        top: 0%;
+        opacity: 1;
+    }
+
+    header .header-toggle-wrapper {
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+
+    header .header-link-wrapper ul {
+        flex-direction: column;
+        margin-top: 150px;
+        gap: 40px;
+        height: 100vh;
+    }
+
+    header .header-link-wrapper ul li a {
+
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    body.active {
+        overflow: hidden;
+    }
+
+    footer .footer-wrapper {
+        align-items: center;
+        gap: 25px;
+        flex-direction: column-reverse;
+    }
+
+    footer .footer-right h4 {
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+
+    }
+
+    footer .social-icon ul li svg {
+        width: 25px;
+    }
+
+    footer {
+        padding: 30px 0px;
+    }
+
+    .about,
+    .resume,
+    .project,
+    .contact {
+        padding: 50px 0px;
+    }
+
+    .resume .experience-wapper,
+    .resume .education {
+        margin: 30px 0px;
+    }
+    .project .card-col{
+        width: 100%;
+    }
+    .project .project-card {
+    margin: 50px 0px;
+}
+
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 30px 0px;
+
+    }
+
+    header .porfolio-designation a {
+        font-size: 14px;
+    }
+
+    header .portfolio-name a {
+        font-size: 20px;
+    }
+
+    .about .about-social-links ul {
+        gap: 15px;
+    }
+
+    header .header-link-wrapper ul li a {
+        font-size: 25px;
+    }
+
+    header .header-link-wrapper ul {
+        margin-top: 110px;
+        gap: 30px;
+
+    }
+
+    .about .about-bio {
+        padding: 10px 30px;
+    }
+
+    .about .about-img {
+        margin: 0px 0px 15px 0;
+    }
+
+    .about .about-name {
+        margin: 0px 0px 15px 0;
+    }
+
+    .about .about-designation {
+        margin: 15px 0px;
+    }
+
+    .about .about-social-links {
+        padding: 20px 40px;
+
+    }
+
+    .about .about-designation p {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    .about .about-name h2 {
+        font-size: 21px;
+    }
+
+    .about .about-heading h1 {
+        font-size: 50px;
+    }
+
+    .about .about-subheading h4 {
+        font-size: 20px;
+    }
+
+    .about-short-desc p {
+        font-size: 15px;
+    }
+
+    footer .footer-right {
+        gap: 30px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    footer .footer-right h4 {
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    footer {
+        padding: 20px 0px;
+    }
+
+    footer .footer-left {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about,
+    .resume,
+    .project,
+    .contact {
+        padding: 40px 0px;
+    }
+
+    .resume .experience-wapper,
+    .resume .education {
+        margin: 25px 0px;
+    }
+
+    .resume .resume-details-left,
+    .resume .resume-details-right {
+        width: 100%;
+    }
+
+    .resume .resume-desc p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .resume .year h3 {
+        font-size: 18px;
+    }
+
+    .resume .position p {
+        font-size: 16px;
+    }
+
+    .resume .company-name p,
+    .resume .company-location p {
+        font-size: 13px;
+    }
+
+    .resume .resume-tittle h1,
+    .project .project-tittle h1,
+    .contact .contact-tittle h1 {
+        font-size: 30px;
+    }
+
+    .resume .experience-heading h2,
+    .resume .education-heading h2,
+    .resume .skills-heading h3 {
+        font-size: 22px;
+    }
+        .resume .btn {
+        padding: 6px 20px;
+        font-size: 12px;
+    }
+        .project .project-card {
+        margin: 30px 0px;
+    }
+    .project .card-desc p {
+    font-size: 15px;
+}
+.contact .contact-form {
+    margin: 30px 0px;
+    padding: 30px 20px;
+}
+.contact .first-two-coloums {
+    flex-direction: column;
+    gap: 0px;
+}
+.contact .form-groups label {
+    padding: 20px 0px 15px 0px;
+}
+
+}
+
+
+
+
+/********************************** Responsive css End  **********************************/
