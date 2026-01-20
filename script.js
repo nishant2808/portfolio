@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll(".current-year").forEach(function(el){
+          el.textContent = new Date().getFullYear();
+        });
   const toggleBtn = document.querySelector('.header-toggle-wrapper');
   const headerMenu = document.querySelector('.header-link-wrapper');
   const bodys = document.body;
