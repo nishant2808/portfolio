@@ -280,7 +280,7 @@ footer .footer-right p {
     height: 205px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: bottom;
+    object-position: center;
 }
 
 .about .about-name {
